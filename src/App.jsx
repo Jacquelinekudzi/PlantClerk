@@ -2,15 +2,21 @@
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 import './App.css'
+import Sidebar from './components/Sidebar'
+//import Header from './components/Header'
+//import Hero from './components/Hero'
+import Topbar from './components/Topbar'
+import Dashboard from './pages/Dashboard'
 
 function App() {
   //const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Topbar/>
+    
+    <Sidebar/> 
+   
     </>
   )
 }

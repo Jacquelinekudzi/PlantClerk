@@ -1,6 +1,6 @@
 //import React from 'react'
 
-const Hero = () => {
+const Header = () => {
   return (
     <div><header className="bg-white lg:py-8">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -55,4 +55,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Header
