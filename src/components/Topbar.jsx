@@ -1,11 +1,7 @@
 //import React from 'react'
- //import React from 'react'
 import { IoIosNotifications } from "react-icons/io";
- import { TbMessage } from "react-icons/tb";
- import { FiSearch } from "react-icons/fi";
-
-
-
+import { TbMessage } from "react-icons/tb";
+import { FiSearch } from "react-icons/fi";
 
 const Topbar = () => {
   return (
@@ -27,7 +23,7 @@ const Topbar = () => {
                   type="search"
                   name=""
                   id=""
-                  className="block w-full py-2 pl-10 border-gray-300 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm"
+                  className="block w-full py-2 pl-10 border-2 border-gray-300 rounded-3xl bg-gray-100 focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm"
                   placeholder="Search here"
                 />
               </div>
@@ -63,6 +59,4 @@ const Topbar = () => {
   );
 };
 
-
-
-export default Topbar
+export default Topbar;
