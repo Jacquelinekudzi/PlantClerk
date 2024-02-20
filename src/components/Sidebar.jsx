@@ -1,11 +1,12 @@
 //import React from 'react'
 import Dashboard from "../pages/Dashboard";
+import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div>
-      <div className="mt-0 flex flex-6 bg-gray-50">
+      <div className="mt-0 flex flex-6">
         <div className="hidden md:flex md:w-64 md:flex-col">
-          <div className="flex flex-col flex-grow pt-0 overflow-y-auto bg-white">
+          <div className="flex flex-col flex-grow pt-0 overflow-y-auto bg-gray-500">
           <div className="flex items-center flex-shrink-0 px-4">
                 <img className="w-auto h-8" src="./src/images/logo1.jpg" alt="" />
             </div>
@@ -18,8 +19,8 @@ const Sidebar = () => {
             <div className="flex flex-col flex-1 px-3 mt-6">
               <div className="space-y-4">
                 <nav className="flex-1 space-y-2">
-                  <a
-                    href="#"
+                 <Link
+                    to="/"
                     title=""
                     className="flex items-center px-4 py-2.5 text-sm font-medium text-white transition-all duration-200 bg-indigo-600 rounded-lg group"
                   >
@@ -39,10 +40,10 @@ const Sidebar = () => {
                       />
                     </svg>
                     Dashboard
-                  </a>
+              </Link>
 
-                  <a
-                    href="#"
+                 <Link
+                    to="/plant-list"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-gray-900 hover:text-white rounded-lg hover:bg-indigo-600 group"
                   >
                     <svg
@@ -60,16 +61,16 @@ const Sidebar = () => {
                       />
                     </svg>
                     Plant List
-                  </a>
+              </Link>
 
-                  <a
-                    href="#"
+                 <Link
+                    to="/analytics"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-gray-900 hover:text-white rounded-lg hover:bg-indigo-600 group"
                   >
                     <svg
                       className="flex-shrink-0 w-5 h-5 mr-4"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6"
+                      
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -82,20 +83,20 @@ const Sidebar = () => {
                       />
                     </svg>
                     Analytics
-                  </a>
+              </Link>
                 </nav>
 
                 <hr className="border-gray-200" />
 
                 <nav className="flex-1 space-y-2">
-                  <a
-                    href="#"
+                 <Link
+                    to="/reports"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-gray-900 hover:text-white rounded-lg hover:bg-indigo-600 group"
                   >
                     <svg
                       className="flex-shrink-0 w-5 h-5 mr-4"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6"
+                    
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -108,10 +109,10 @@ const Sidebar = () => {
                       />
                     </svg>
                     Reports
-                  </a>
+              </Link>
 
-                  <a
-                    href="#"
+                 <Link
+                    to="/assign_operators"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-gray-900 hover:text-white rounded-lg hover:bg-indigo-600 group"
                   >
                     <svg
@@ -129,10 +130,9 @@ const Sidebar = () => {
                       />
                     </svg>
                     Assign Operators
-                  </a>
+              </Link>
 
-                  <a
-                    href="#"
+                 <Link to="/new_requisition"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-gray-900 hover:text-white rounded-lg hover:bg-indigo-600 group"
                   >
                     <svg
@@ -150,20 +150,20 @@ const Sidebar = () => {
                       />
                     </svg>
                     New Requisition
-                  </a>
+              </Link>
                 </nav>
 
                 <hr className="border-gray-200" />
 
                 <nav className="flex-1 space-y-2">
-                  <a
-                    href="#"
+                 <Link
+                    to="/settings"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-gray-900 hover:text-white rounded-lg hover:bg-indigo-600 group"
                   >
                     <svg
                       className="flex-shrink-0 w-5 h-5 mr-4"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6"
+                      
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -181,7 +181,7 @@ const Sidebar = () => {
                       />
                     </svg>
                     Settings
-                  </a>
+              </Link>
                 </nav>
               </div>
 
@@ -195,7 +195,7 @@ const Sidebar = () => {
                     src="https://landingfoliocom.imgix.net/store/collection/clarity-dashboard/images/vertical-menu/2/avatar-male.png"
                     alt=""
                   />
-                  Jacob Jones
+                  Plant Clerk Mr City
                   <svg
                     className="w-5 h-5 ml-auto"
                     xmlns="http://www.w3.org/2000/svg"
@@ -216,14 +216,15 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div className="flex flex-col flex-1">
+        {/* <div className="flex flex-col flex-1">
           <main>
             <div className="py-6">
               <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8"></div>
               <Dashboard/>
             </div>
           </main>
-        </div>
+        </div> */}
+        
       </div>
     </div>
   );
